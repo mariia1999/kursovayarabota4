@@ -22,8 +22,8 @@ def user_interaction():
         vacancies_list = []
 
         for vac in hh_vacancies:
-            print(vac.__dict__)
-            vacancies_list.append(vac.__dict__)
+            print(vac)
+            vacancies_list.append(vac)
         # Фильтрация, сортировка и выбор топ N вакансий
         print(vacancies_list)
         filtered_vacancies = filter_vacancies(vacancies_list, filter_words)
